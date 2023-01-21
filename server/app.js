@@ -4,7 +4,7 @@ const helmet = require("helmet");
 const compression = require('compression');
 const passport = require("passport");
 const { jwtStrategy } = require("./src/config/passport");
-const routes = require("./src/Routes/v1")
+const routes = require("./src/routes/v1")
 const ApiError = require("./src/utils/ApiError");
 const {errorHandler} = require("./src/middlewares/error");
 // set security HTTP headers - https://helmetjs.github.io/
