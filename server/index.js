@@ -16,8 +16,7 @@ mongoose.connect(DB_URI)
 
 
 const server = app;
-console.log(config)
-const PORT = process.env.PORT
+const PORT = config.port
 server.listen(PORT, ()=>{
     console.log('listening on port http://localhost:'+PORT);
 }) 
