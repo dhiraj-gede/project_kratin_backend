@@ -16,7 +16,7 @@ const config = require('./src/config/config');
 
 
 const server = app;
-const PORT = config.port
+const PORT = 8082
 
 server.listen(PORT, ()=>{
     console.log('listening on port http://localhost:'+PORT);
