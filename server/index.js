@@ -1,7 +1,7 @@
 const express = require('express');
 const app  = require('./app');
 // const mongoose = require('mongoose');
-const config = require('./src/config/config');
+// const config = require('./src/config/config');
 
 // const DB_URI = config.mongoose.url
 // mongoose.set('strictQuery', false);
@@ -16,7 +16,7 @@ const config = require('./src/config/config');
 
 
 const server = app;
-const PORT = config.port
+const PORT = 8082
 
 server.listen(PORT, ()=>{
     console.log('listening on port http://localhost:'+PORT);
