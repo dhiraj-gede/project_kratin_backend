@@ -34,6 +34,7 @@ async function createUser(user) {
 const setPatientDetails = async (patient, newData)=>{
     
     patient.userData = newData;
+    console.log(patient.userData, newData)
     await patient.save();
     return patient.userData;
 }

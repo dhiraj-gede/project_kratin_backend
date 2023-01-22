@@ -10,9 +10,18 @@ const setData = {
         userId: Joi.string().custom(objectId),
     }),
     body: Joi.object().keys({
-        height: Joi.number().required(),
         weight: Joi.number().required(),
-        image: Joi.string()
+        height: Joi.number().required(),
+        image: Joi.string(),
+        aadhaar: Joi.number(),
+        code: Joi.string(),
+        IllnessName: Joi.string(),
+        medicine: Joi.string(),
+        date: Joi.string(),
+        treatment: Joi.string(),
+        bloodType: Joi.string(),
+        sex: Joi.string(),
+        age: Joi.number()
     }),
 };
 module.exports = {

@@ -13,19 +13,15 @@ const patientSchema = mongoose.Schema(
             required: true,
             trim: true,
             lowercase: true,
-        },
-        Height: {
+        }, 
+        height: {
             type: Number,
             required: true,
             trim: true,
             lowercase: true,
         },
 
-        image: {
-            type: String,
-            required: false,
-            trim: true,
-        },
+        
     }, {
     timestamps: false,
 }

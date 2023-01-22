@@ -53,8 +53,54 @@ const userSchema = mongoose.Schema({
             trim: true,
         },
     
+        
         image: {
             type: String,
+            required: false,
+            trim: true,
+        },
+        code: {
+            type: String,
+            required: false,
+            trim: true,
+        },
+        IllnessName: {
+            type: String,
+            required: false,
+            trim: true,
+        },
+        medicine: {
+            type: String,
+            required: false,
+            trim: true,
+        },
+        date: {
+            type: String,
+            required: false,
+            trim: true,
+        },
+        treatment: {
+            type: String,
+            required: false,
+            trim: true,
+        },
+        bloodType: {
+            type: String,
+            required: false,
+            trim: true,
+        },
+        sex: {
+            type: String,
+            required: false,
+            trim: true,
+        },
+        aadhaar: {
+            type: Number,
+            required: false,
+            trim: true,
+        },
+        age: {
+            type: Number,
             required: false,
             trim: true,
         },
