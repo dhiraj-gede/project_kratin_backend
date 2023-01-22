@@ -34,6 +34,7 @@ var corsOptions = {
 }
 app.use(cors());
 
+
 // Initialize passport  "jwt" authentication strategy
 app.use(passport.initialize());
 passport.use("jwt", jwtStrategy);
